@@ -1,0 +1,151 @@
+:root{
+    --primary-color:#e50914;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color:#999;
+    -webkit-font-smoothing:antialiased;
+}
+ul{
+    list-style: none;
+
+}
+h1,h2,h3,h4{
+    color:#999;
+}
+a{
+    color:#999;
+    text-decoration: none;
+}
+
+p{
+    margin:0.5rem 0;
+}
+img{
+    width:100%;
+}
+.showcase{
+    width:100%;
+    height:93vh;
+    position:relative;
+    background: url('planets.jpg')no-repeat;
+    background-position: center;
+}
+.showcase::after {
+   content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index:1;
+    background:rgb(0,0,0,0.5);
+}
+.topshowcase{
+    position:relative;
+    z-index: 2;
+    height:90px;
+}
+.topshowcase img{
+    width:170px; 
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.topshowcase a{
+    position:absolute;
+    top:50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+.showcasecontent   {
+    position:relative;
+    margin:auto;
+    display:flex;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+.showcasecontent h1{
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin:0 0 2rem;
+}
+.showcasecontent p{
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height:1.25;
+    margin: 0 0 2rem;
+}
+.tabs{
+    background: var(--dark-color);
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+}
+.tabs .container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem;
+    align-items:center;
+    justify-content: center;
+    text-align: center;   
+}
+.tabs p{
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+.tabs .container > div{
+    padding:1.5rem 0;
+}
+
+.tabs .container > div:hover{
+    color:#fff;
+    cursor:pointer;
+}
+.container{
+    max-width: 70%;
+    margin:auto;
+    overflow: hidden;
+    padding:0  2rem;
+}
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    color:#fff;
+    padding:0.4rem 1.3rem;
+    font-size:1rem;
+    text-align: center; 
+    border:none;
+    cursor:pointer;
+}
+.btn:hover{
+    opacity:0.9;
+}
+.btnrounded{
+    border-radius: 5px;
+}
+.btnxl{
+    font-size:2rem;
+    padding:1.5rem 2.1rem;
+    text-transform: uppercase;
+}
+.btnlg{
+    font-size:2rem;
+    padding:1.5rem 2.1rem;
+    text-transform: uppercase;
+}
+
